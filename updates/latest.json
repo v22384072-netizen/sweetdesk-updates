@@ -1,5 +1,5 @@
 {
     "version": "3.1.0",
-    "changelog": "- Первая версия\n- Базовый функционал",
-    "download_url": "https://sweetdesk-app.github.io/sweetdesk-updates/downloads/SweetDesk.exe"
+    "changelog": "- Первая версия\n- Заказы, склад, рецепты\n- Печать чеков и этикеток\n- Автообновление",
+    "download_url": "https://v22384072-netizen.github.io/sweetdesk-updates/SweetDesk.exe"
 }
