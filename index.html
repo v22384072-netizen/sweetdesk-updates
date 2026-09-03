@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetDesk — программа для кондитера</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #F7F5F2;
+            color: #282522;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .logo {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #C98292;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #8A8580;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .features {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background: #FAF7F4;
+            border-radius: 12px;
+        }
+        .features li {
+            list-style: none;
+            padding: 5px 0;
+            font-size: 15px;
+        }
+        .features li::before {
+            content: '✓ ';
+            color: #2F8F5B;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: #C98292;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #B86B7C;
+            transform: translateY(-2px);
+        }
+        .contacts {
+            margin-top: 20px;
+            color: #8A8580;
+            font-size: 14px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #C98292;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🍰</div>
+        <h1>SweetDesk</h1>
+        <div class="subtitle">Ваша кондитерская — в одном приложении</div>
+        
+        <div class="features">
+            <ul>
+                <li>Заказы и календарь</li>
+                <li>Рецепты с себестоимостью</li>
+                <li>Склад и закупки</li>
+                <li>Клиенты и история</li>
+                <li>Прибыль и аналитика</li>
+                <li>Печать чеков и этикеток</li>
+            </ul>
+        </div>
+        
+        <div class="price">1 990 ₽ — разовая покупка</div>
+        
+        <a href="https://v22384072-netizen.github.io/sweetdesk-updates/SweetDesk.exe" class="btn">Скачать бесплатно</a>
+        
+        <div class="contacts">
+            📧 sweetdesk@yandex.com<br>
+            💬 Telegram: @trev182
+        </div>
+    </div>
+</body>
+</html>
