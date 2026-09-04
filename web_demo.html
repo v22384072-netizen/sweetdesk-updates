@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetDesk — Демо</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #F7F5F2;
+            color: #282522;
+            min-height: 100vh;
+        }
+        
+        .phone-frame {
+            max-width: 420px;
+            margin: 0 auto;
+            background: #F7F5F2;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: #FFFFFF;
+            padding: 20px 16px 15px;
+            border-bottom: 1px solid #E8E4DF;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #C98292;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #8A8580;
+        }
+        
+        .demo-banner {
+            background: #FFF4DE;
+            margin: 12px 16px;
+            padding: 12px 15px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .demo-banner-text {
+            flex: 1;
+            font-size: 11px;
+            color: #B8741A;
+            font-weight: bold;
+        }
+        
+        .buy-btn {
+            background: #C98292;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        
+        .greeting {
+            padding: 20px 16px 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .kpi-row {
+            display: flex;
+            gap: 8px;
+            padding: 0 16px;
+            margin-bottom: 15px;
+        }
+        
+        .kpi-card {
+            flex: 1;
+            background: #FFFFFF;
+            border: 1px solid #E8E4DF;
+            border-radius: 14px;
+            padding: 12px;
+        }
+        
+        .kpi-label {
+            font-size: 10px;
+            color: #8A8580;
+        }
+        
+        .kpi-value {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+        
+        .section-title {
+            padding: 0 16px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .order-card {
+            background: #FFFFFF;
+            border: 1px solid #E8E4DF;
+            border-radius: 12px;
+            margin: 0 16px 8px;
+            padding: 12px 14px;
+        }
+        
+        .order-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .order-time {
+            color: #C98292;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .order-status {
+            font-size: 9px;
+            font-weight: bold;
+            padding: 3px 10px;
+            border-radius: 8px;
+        }
+        
+        .status-prepay {
+            background: #FFF4DE;
+            color: #B8741A;
+        }
+        
+        .status-new {
+            background: #F0EDEA;
+            color: #8A8580;
+        }
+        
+        .status-paid {
+            background: #E8F5EE;
+            color: #2F8F5B;
+        }
+        
+        .order-name {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .order-customer {
+            font-size: 10px;
+            color: #8A8580;
+        }
+        
+        .order-price {
+            font-size: 11px;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+        
+        .bottom-nav {
+            background: #FFFFFF;
+            padding: 10px 8px;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            bottom: 0;
+            border-top: 1px solid #E8E4DF;
+        }
+        
+        .nav-item {
+            text-align: center;
+            font-size: 9px;
+            color: #8A8580;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        
+        .nav-item.active {
+            background: #C98292;
+            color: white;
+        }
+        
+        .nav-icon {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .overlay {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #282522;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 12px;
+            z-index: 100;
+            text-align: center;
+            max-width: 380px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .overlay a {
+            color: #C98292;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="header">
+            <div class="logo">SweetDesk</div>
+            <div class="subtitle">Ваша кондитерская</div>
+        </div>
+        
+        <div class="demo-banner">
+            <div class="demo-banner-text">ДЕМО-ВЕРСИЯ<br>Данные не сохраняются</div>
+            <a href="https://t.me/trev182" class="buy-btn">Купить — 1 990 ₽</a>
+        </div>
+        
+        <div class="greeting">Доброе утро 👋</div>
+        
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Заказов сегодня</div>
+                <div class="kpi-value">3</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Выручка</div>
+                <div class="kpi-value">12 500 ₽</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Прибыль</div>
+                <div class="kpi-value" style="color: #2F8F5B;">4 700 ₽</div>
+            </div>
+        </div>
+        
+        <div class="section-title">Заказы на сегодня</div>
+        
+        <div class="order-card">
+            <div class="order-top">
+                <span class="order-time">12:00</span>
+                <span class="order-status status-prepay">предоплата</span>
+            </div>
+            <div class="order-name">Красный бархат</div>
+            <div class="order-customer">Анна Петрова</div>
+            <div class="order-price">4 500 ₽</div>
+        </div>
+        
+        <div class="order-card">
+            <div class="order-top">
+                <span class="order-time">16:00</span>
+                <span class="order-status status-new">новый</span>
+            </div>
+            <div class="order-name">Меренговый рулет</div>
+            <div class="order-customer">Мария Иванова</div>
+            <div class="order-price">2 800 ₽</div>
+        </div>
+        
+        <div class="order-card">
+            <div class="order-top">
+                <span class="order-time">18:00</span>
+                <span class="order-status status-paid">оплачен</span>
+            </div>
+            <div class="order-name">Трюфельный торт</div>
+            <div class="order-customer">Екатерина Волкова</div>
+            <div class="order-price">5 200 ₽</div>
+        </div>
+        
+        <div style="height: 30px;"></div>
+        
+        <div class="bottom-nav">
+            <div class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                Сегодня
+            </div>
+            <div class="nav-item" onclick="showAlert()">
+                <span class="nav-icon">▤</span>
+                Заказы
+            </div>
+            <div class="nav-item" onclick="showAlert()">
+                <span class="nav-icon">◈</span>
+                Рецепты
+            </div>
+            <div class="nav-item" onclick="showAlert()">
+                <span class="nav-icon">□</span>
+                Продукты
+            </div>
+            <div class="nav-item" onclick="showAlert()">
+                <span class="nav-icon">₽</span>
+                Деньги
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay" style="display: none;">
+        Это демо-версия 👀<br>
+        Полная версия: <a href="https://t.me/trev182">@trev182</a>
+    </div>
+    
+    <script>
+        function showAlert() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'block';
+            setTimeout(function() {
+                overlay.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
