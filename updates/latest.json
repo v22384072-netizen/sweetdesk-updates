@@ -1,5 +1,6 @@
 {
-    "version": "3.2.1",
-    "changelog": "- Обновление до версии 3.2.1",
-    "download_url": "https://v22384072-netizen.github.io/sweetdesk-updates/SweetDesk.exe"
+  "version": "3.2.1",
+  "changelog": "- Обновление до версии 3.2.1",
+  "download_url": "https://v22384072-netizen.github.io/sweetdesk-updates/SweetDesk.exe",
+  "sha256": "b76057e1fa7aae2296b90792dca6e59880a8f4d2e97c4edff8af152382585e9b"
 }
