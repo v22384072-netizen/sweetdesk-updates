@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://v22384072-netizen.github.io/sweetdesk-updates/sitemap.xml
