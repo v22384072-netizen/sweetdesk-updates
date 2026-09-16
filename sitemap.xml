@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://v22384072-netizen.github.io/sweetdesk-updates/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/sweetdesk.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/programma-dlya-konditera.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/programma-dlya-konditerskoy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/uchet-konditerskoy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/uchet-zakazov-tortov.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://v22384072-netizen.github.io/sweetdesk-updates/sebestoimost-tortov.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
